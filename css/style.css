@@ -125,6 +125,16 @@ nav {
   text-align: right;
   margin: 1em;
 }
+#hovedretter,
+#foretter,
+#desserter {
+  font-family: var(--citat);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+  color: var(--black);
+  text-align: center;
+}
+
 /* alle besillinger */
 #alleBestillinger {
   position: fixed;
@@ -167,6 +177,11 @@ nav {
   text-align: center;
   margin: 1em;
 }
-/*section {
-  width: 100%;
-}*/
+/* kvittering */
+#visPenge {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap:0.3em;
+}
