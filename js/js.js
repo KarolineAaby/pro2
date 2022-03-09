@@ -50,16 +50,14 @@ dessertTo.addEventListener('click', function(){
 })
 
 
-
 //istedet for sum, kan man bruge localstorage
 
 // betal knap
 betal.addEventListener('click', function(){
   localStorage.setItem("liste", bestillinger.innerHTML);
+  location.href = "bestillingspanel-kvitering.html"
 })
 
 betal.addEventListener('click', function(){
   localStorage.setItem("pengeialt", ialt.innerHTML);
 })
-
-// kvittering

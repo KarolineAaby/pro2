@@ -161,6 +161,7 @@ nav {
   display: inline-block;
   box-shadow: 0px 0px 5px var(--brown);
   border-radius: 60px;
+  border: none;
   /* text-align: center;
   font-size: 1.5em;
   padding: 14px 50px;
@@ -176,12 +177,59 @@ nav {
   gap:0.3em;
   text-align: center;
   margin: 1em;
+  margin-top: 0.1em;
+}
+#pengeIalt h4 {
+  margin-top: 1.5em;
 }
 /* kvittering */
+#kvittering {
+  text-align: center;
+  font-family: var(--brødtekst);
+  color: var(--black);
+}
+#kvittering h1 {
+  text-align: center;
+  font-family: var(--overskrift1);
+  color: var(--black);
+  margin-top: 2.5em;
+  font-size: 2rem;
+}
+#kvittering h3 {
+  text-align: center;
+  margin-top: 2em;
+  font-family: var(--overskrift2);
+  color: var(--black);
+  font-size: 1.5rem;
+}
 #visPenge {
   margin-top: 2em;
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: center;
   gap:0.3em;
+}
+/* baggrund */
+.bestillingspanelKvittering {
+  background-color: var(--yellow);
+}
+/* btn - Tilbage til startskærm */
+#VendTilStart {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+#VendTilStart button {
+  color: var(--white);
+  background-color: var(--orange);
+  text-align: center;
+  font-size: 1.5em;
+  font-family: var(--overskrift1);
+  padding: 14px 50px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 0px 5px var(--brown);
+  border-radius: 60px;
+  border: none;
 }
