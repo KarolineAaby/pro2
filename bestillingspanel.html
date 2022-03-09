@@ -1,0 +1,60 @@
+<!--
+PRO2
+case: Alices Restaurant - touchscreeen
+Selvstudiedag 1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bestllingspanel</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Alices Restaurant logo" style="width: auto; height:55px;"></a>
+  </nav>
+
+  <main id="bestillingspanel">
+  <section id="bestillingsMenu">
+    <article id="oksemørbrad" class="order">
+      <h2 id="oksemørbradBestilling">Oksemørbrad med kantarelsauce</h2>
+      <img id="test" src="images/oksemørbrad.jpg" alt="#">
+      <p>Pris: 220,-</p>
+      <!-- <div id="fjern">
+      <button onclick="alert('X klikket')">X</button>
+    </div> -->
+    </article>
+    <article id="laks" class="order">
+      <h2 id="laksBestilling">Frisk laks med grønt</h2>
+      <img id="testTo" src="images/laks.jpg" alt="#">
+      <p>Pris: 190,-</p>
+    </article>
+    <article id="kylling" class="order">
+      <h2 id="kyllingBestilling">Kylling med peaunuts</h2>
+      <img id="testTre" src="images/kylling.jpg" alt="#">
+      <p>Pris: 89,-</p>
+    </article>
+  </section>
+
+  <section id="alleBestillinger">
+  <article id="bestillinger">
+    <h1>Her er bestillinger</h1>
+  </article>
+  <article id=pengeIalt>
+    <h4>I alt:</h4>
+    <p id="ialt"></p>
+    <button id="betal">Betal</button> <!-- må ikke stå under id=bestillinger -->
+  </article>
+  </section>
+
+  </main>
+
+  <!-- scripts -->
+  <script src="js/js.js"></script>
+</body>
+</html>

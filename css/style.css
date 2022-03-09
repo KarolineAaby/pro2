@@ -1,0 +1,172 @@
+/*
+PRO2
+case: Alices Restaurant - touchscreeen
+*/
+
+/* Adobe fonts */
+@import url("https://use.typekit.net/vzd5ibg.css");
+/* font-family: 'filicudi-solid', sans-serif; font-weight: 400; font-style: normal; */
+@import url("https://use.typekit.net/vzd5ibg.css");
+/* font-family: 'interface', sans-serif; font-weight: 700; font-style: normal; */
+@import url("https://use.typekit.net/vzd5ibg.css");
+/* font-family: 'myriad-pro', sans-serif; font-weight: 400; font-style: normal; */
+@import url("https://use.typekit.net/ewx8vxc.css");
+/* font-family: 'gautreaux', sans-serif; font-weight: 700; font-style: normal; */
+
+/* Variabler*/
+:root {
+  /* farver */
+  --white: #F2F2F2;
+  --yellow: #f8d5a3;
+  --orange: #D9843B;
+  --darkorange: #BF5630;
+  --brown: #C39E83;
+  --grey: #1B2226;
+  --black: #0C0D12;
+
+  /* whitespace */
+  --whitespace: .5rem;
+
+  /* fonte */
+  --overskrift1: 'filicudi-solid', sans-serif; /* overskrift 1 */
+  --overskrift2: 'interface', sans-serif; /* overskrift 2 */
+  --brødtekst: 'myriad-pro', sans-serif; /* brødtekst */
+  --citat: 'gautreaux', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* max-width: 750px;
+  max-height: 1020px; */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* baggrund */
+body {
+  background-size:100% auto;
+  background-color: var(--white);
+}
+
+/* Typography */
+h1, h3, h4 {
+  font-family: var(--overskrift1);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+  color: var(--black);
+}
+h2, {
+  font-family: var(--overskrift2);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+  color: var(--black);
+}
+p {
+  font-family: var(--brødtekst);
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+  color: var(--black);
+}
+
+/* Billeder */
+img {
+  width: 100%;
+}
+
+/* Selvstudiedag 1 - navbar m. wheather */
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--orange);
+  padding: 1em;
+}
+/*.navbar {
+  overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;*/
+    /*background-color: var(--black);
+}*/
+
+/* Selvstudiedag 1 - bestillingspanel */
+#bestillingspanel {
+  display: flex;
+}
+#bestillingspanel article {
+  margin-bottom: 2em;
+}
+/* bestillings menuen */
+#bestillingsMenu {
+  width: 66%;
+}
+#bestillingspanel img,
+#bestillingspanel h2,
+#bestillingspanel p {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#bestillingspanel h2 {
+  margin-bottom: 1em;
+}
+.order p {
+  text-align: right;
+  margin: 1em;
+}
+/* alle besillinger */
+#alleBestillinger {
+  position: fixed;
+  /*position: fixed;*/
+  background-color: var(--yellow);
+  text-align: center;
+  width: 34%;
+  height: 1020px; /* Højden afhænger af hvor stor skærmen endeligt vil være */
+  margin-right: 0;
+  margin-left: 66%;
+  /*height: 100%;*/
+  padding: 1.5em;
+  /*position: fixed;*/
+}
+/* betal knap */
+#betal {
+  color: var(--white);
+  background-color: var(--orange);
+  text-align: center;
+  font-size: 1.5em;
+  font-family: var(--overskrift1);
+  padding: 14px 50px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 0px 5px var(--brown);
+  border-radius: 60px;
+  /* text-align: center;
+  font-size: 1.5em;
+  padding: 14px 50px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 60px;
+  border: none;*/
+}
+#ialt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:0.3em;
+  text-align: center;
+  margin: 1em;
+}
+/*section {
+  width: 100%;
+}*/
