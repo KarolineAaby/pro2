@@ -1,6 +1,6 @@
 /*
 PRO2
-case: Alices Restaurant - touchscreeen
+case: Alices Restaurant - touchscreeen i str. 750x1020
 */
 
 /* --- Selvstudiedag 1 --- */

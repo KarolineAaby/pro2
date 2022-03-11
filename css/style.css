@@ -1,6 +1,6 @@
 /*
 PRO2
-case: Alices Restaurant - touchscreeen
+case: Alices Restaurant - touchscreeen i str. 750x1020
 */
 
 /* Adobe fonts */
@@ -60,7 +60,7 @@ h1, h3, h4 {
   margin-bottom: var(--whitespace);
   color: var(--black);
 }
-h2, {
+h2 {
   font-family: var(--overskrift2);
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
@@ -85,6 +85,15 @@ nav {
   top: 0;
   background-color: var(--orange);
   padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-vendTilbage {
+  font-family: var(--overskrift2);
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--black);
+  margin-right: 40px;
 }
 /*.navbar {
   overflow: hidden;
@@ -111,9 +120,13 @@ nav {
 #bestillingsMenu {
   width: 66%;
 }
+#bestillingsMenu h1 {
+  text-align: center;
+}
 #bestillingspanel img,
 #bestillingspanel h2,
-#bestillingspanel p {
+#bestillingspanel p,
+#bestillingsMenu h1 {
   max-width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -162,6 +175,9 @@ nav {
   box-shadow: 0px 0px 5px var(--brown);
   border-radius: 60px;
   border: none;
+
+  /* margin-top: 680px; */
+
   /* text-align: center;
   font-size: 1.5em;
   padding: 14px 50px;
