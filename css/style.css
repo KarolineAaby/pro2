@@ -78,7 +78,7 @@ img {
   width: 100%;
 }
 
-/* Selvstudiedag 1 - navbar m. wheather */
+/* Navbar */
 nav {
   position: -webkit-sticky;
   position: sticky;
@@ -109,7 +109,8 @@ nav {
     /*background-color: var(--black);
 }*/
 
-/* Selvstudiedag 1 - bestillingspanel */
+
+/* --- Selvstudiedag 1 d. 09/03 - bestillingspanel --- */
 #bestillingspanel {
   display: flex;
 }
@@ -147,11 +148,9 @@ nav {
   color: var(--black);
   text-align: center;
 }
-
 /* alle besillinger */
 #alleBestillinger {
   position: fixed;
-  /*position: fixed;*/
   background-color: var(--yellow);
   text-align: center;
   width: 34%;
@@ -160,7 +159,6 @@ nav {
   margin-left: 66%;
   /*height: 100%;*/
   padding: 1.5em;
-  /*position: fixed;*/
 }
 /* betal knap */
 #betal {
@@ -175,17 +173,8 @@ nav {
   box-shadow: 0px 0px 5px var(--brown);
   border-radius: 60px;
   border: none;
-
-  /* margin-top: 680px; */
-
-  /* text-align: center;
-  font-size: 1.5em;
-  padding: 14px 50px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 60px;
-  border: none;*/
 }
+/* penge i alt */
 #ialt {
   display: flex;
   flex-direction: row;
@@ -248,4 +237,95 @@ nav {
   box-shadow: 0px 0px 5px var(--brown);
   border-radius: 60px;
   border: none;
+}
+
+
+/* --- Library - Selvstudiedag 2 d. 11/03 --- */
+.section {
+  text-align:center;
+  /*font-size: 3em;*/
+}
+#getActiveSection{
+  /*top: 20px;*/
+  /*left: 320px;
+  position:fixed;
+  z-index:999;*/
+  /*font-size: 2.4em;*/
+}
+
+/* --- weather - Selvstudiedag 2 d. 11/03 --- */
+#vejret {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+#vejrIkon {
+  width: 80%;
+  height: auto;
+}
+#pil {
+  position: relative;
+  width: 10%;
+  height: auto;
+}
+#vind {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: baseline;
+}
+
+#sectionTo h1 {
+  font-size: 2.5rem;
+}
+#sectionTo h2 {
+  font-size: 2rem;
+  color: var(--yellow);
+}
+#sectionTo p {
+  font-size: 1.5rem;
+}
+#stepEt {
+  margin: 5em;
+}
+
+/* --- Mapbox på forside - Selvstudiedag 3 d. 15/03 ---- */
+#map {
+  /*position: absolute;
+  top: 0;
+   bottom: 0; */
+  width: 70%;
+  height: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 6em;
+}
+#marker {
+  /* hvis man vil tilføje billede fra com: url('images/logo.png'); */
+  background-image: url('https://files.guidedanmark.org/files/484/260036_Boef-restaurant-koed-aarhus.jpg');
+  background-color: black;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+/* Forside, section 1 */
+.velkommen {
+  margin-bottom: 2em;
+  font-size: 2.5rem;
+}
+.velkommen h1 {
+  color: var(--orange);
+  margin-bottom: 0.5em;
+}
+#pilNed {
+  text-decoration: none;
 }
