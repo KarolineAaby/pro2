@@ -104,7 +104,7 @@ $(document).ready(function() {
         //pil
         let roter = data.wind.deg //fra api
 
-        pil.style.transform = "rotate(" + roter - "deg)";
+        pil.style.transform = "rotate(" + roter + "deg)";
 
 
     }).catch(err => {
