@@ -81,24 +81,22 @@ $(document).ready(function() {
 
         // vis på skærm
         result.innerHTML = `
-        <h3> Vejret nu: ${data.name}</h3>
-        <p> ${data.weather[0].description} </p>
-        <section id="vejret">
+        <h3> ${data.name}</h3>
+        <section id="vejretLayout">
           <article>
             <img id="vejrIkon" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Vejret lige nu i Aarhus" />
-
             <div id="vind">
-            <img id="pil" src="images/pil.png" alt="Pil efter vindretning" style="width: auto; height: 20px;">
-            <p> ${data.wind.speed} m/s</p>
+              <img id="pil" src="images/pil.png" alt="Pil efter vindretning" style="width: auto; height: 20px;">
+              <p> ${data.wind.speed} m/s</p>
             </div>
           </article>
-          <article id="temperatur">
+          <article id="vejretInfo">
             <p> Temperatur: ${data.main.temp}°</p>
             <p> Føles som: ${data.main.feels_like}°</p>
             <p> Solnedgang: ${sunsetTime}</p>
             <p> Solopgang: ${sunriseTime}</p>
-         </article>
-       </section>
+          </article>
+        </section>
         `
 
         // append = da. tilføj (noget tilføjes et element med id="result"

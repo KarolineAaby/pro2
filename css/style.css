@@ -254,15 +254,21 @@ nav {
 }
 
 /* --- weather - Selvstudiedag 2 d. 11/03 --- */
-#vejret {
+
+/* vejret position/layout */
+#vejretLayout {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 40px;
-  align-items: flex-start;
+  gap: 80px;
+  align-items: flex-end;
 }
+#vejretInfo {
+  text-align: left;
+}
+
 #vejrIkon {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 #pil {
@@ -278,15 +284,24 @@ nav {
   align-items: baseline;
 }
 
-#sectionTo h1 {
-  font-size: 2.5rem;
-}
-#sectionTo h2 {
+
+#sectionTo h3 {
   font-size: 2rem;
   color: var(--yellow);
 }
 #sectionTo p {
   font-size: 1.5rem;
+}
+
+#stepEt h1 {
+  font-size: 3rem;
+}
+#stepEt h2 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+}
+#stepEt p {
+  font-size: 2rem;
 }
 #stepEt {
   margin: 5em;
