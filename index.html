@@ -1,6 +1,6 @@
 <!--
 PRO2
-case: Alices Restaurant - touchscreeen f.eks. i str. 750x1020
+case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 -->
 
 <!-- library used (skal lige undersøge licensen nærmere): https://alvarotrigo.com/fullPage/#page1 -->
@@ -35,25 +35,38 @@ case: Alices Restaurant - touchscreeen f.eks. i str. 750x1020
           <h1>Velkommmen til</h1>
           <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Alices Restaurant logo" style="width: auto; height:100px;"></a>
         </article>
-        <div id="map"></div> <!-- mapbox - Selvstudiedag 3 d. 15/03 -->
-        <a href="#section2" id="pilNed"><h1>▼</h1></a>
 
+        <div id="map"></div> <!-- mapbox - Selvstudiedag 3 d. 15/03 -->
+        <p id="kortBeskrivelse">Find parkering og transport muligheder</p>
+        <h2>Kom igang</h2>
+        <a href="#section2" id="pilNed"><h1>▼</h1></a>
+        <a href="#section2"><img src="images/pilforside.png" alt="pil til næste side" style="width: auto; height:50px;"></a>
       </div>
 
       <div class="section" id="sectionTo" data-anchor="section2">
-          <div class="slide" data-anchor="slide1">
-            <article id="stepEt">
-              <h2> Step 1 </h2>
-              <h1>Skal du sidde ude?</h1>
-              <p>Vi tilbyder borde både inde- og udendørs.</p>
-            </article>
-            <div id="result"></div> <!-- weather - Selvstudiedag 2 d. 11/03 -->
-            <a class="#" href="#">Book bord</a>
-          </div>
-          <div class="slide" data-anchor="slide2">
-            <h1> Step 2 </h1>
-            <a class="#" href="bestillingspanel.html">Bestil mad</a>
-          </div>
+        <div class="slide" data-anchor="slide1">
+          <article id="stepEt">
+            <h2> Step 1 </h2>
+            <h1>Skal du sidde ude?</h1>
+            <p>Vi tilbyder både borde inde- og udendørs.</p>
+            <img src="images/stepEt.jpg" alt="bord med mad" style="width: 60%; height: auto;">
+          </article>
+          <div id="result"></div> <!-- weather - Selvstudiedag 2 d. 11/03 -->
+          <a class="btnSort" href="#">Book bord</a>
+        </div>
+
+        <div class="slide" data-anchor="slide2">
+          <article id="stepEt">
+            <h2> Step 2 </h2>
+            <h1>Sæsonens menu</h1>
+            <p> Oplev vores eftertragtede forårsmenu 2022.</p>
+            <hr class="lineTo">
+            <p> bestil din mad nu</p>
+            <img src="images/laks.jpg" alt="bord med mad" style="width: 60%; height: auto;">
+          </article>
+
+            <a class="btnSort" href="bestillingspanel.html">Bestil mad</a>
+        </div>
       </div>
   </div>
 

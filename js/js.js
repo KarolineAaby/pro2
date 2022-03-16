@@ -1,6 +1,6 @@
 /*
 PRO2
-case: Alices Restaurant - touchscreeen i str. 750x1020
+case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 */
 
 
@@ -80,8 +80,12 @@ $(document).ready(function() {
 
 
         // vis på skærm
+        // <h3> ${data.name} </h3>
+        // <p> lige nu: ${data.weather[0].description} </p>
         result.innerHTML = `
-        <h3> ${data.name}</h3>
+        <div id="vejretBoks">
+
+        <hr class="line">
         <section id="vejretLayout">
           <article>
             <img id="vejrIkon" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Vejret lige nu i Aarhus" />
@@ -97,6 +101,7 @@ $(document).ready(function() {
             <p> Solopgang: ${sunriseTime}</p>
           </article>
         </section>
+        </div>
         `
 
         // append = da. tilføj (noget tilføjes et element med id="result"
