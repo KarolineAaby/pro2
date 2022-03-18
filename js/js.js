@@ -78,7 +78,6 @@ $(document).ready(function() {
         // Datoformattering @URI < https://www.w3schools.com/js/js_date_methods.asp >
         var sunriseTime = sunriseTimerVis + ":" + sunriseMinutterVis;
 
-
         // vis på skærm
         // <h3> ${data.name} </h3>
         // <p> lige nu: ${data.weather[0].description} </p>
@@ -121,7 +120,6 @@ $(document).ready(function() {
 
 
 
-
 /* --- mapbox - Selvstudiedag 3 d. 15/03 --- */
 // https://docs.mapbox.com/mapbox-gl-js/example/set-popup/
 
@@ -157,3 +155,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia2Fyb2xpbmVhYWJ5IiwiYSI6ImNsMHFlY2xhODI5NzEzZ
       .setLngLat(aarhus)
       .setPopup(popup) // sets a popup on this marker
       .addTo(map);
+
+
+/* --- step 2 åbningstider - Selvstudiedag 5 d. 18/03 --- */
+let day;
+
+switch (new Date().getDay()) {
+
+  case 4: //torsdag
+    day = 'kl 22.00';
+    break;
+  case 5: //fredag
+    day = 'kl. 23.30';
+    break;
+  case 6: //lørdag
+    day = 'kl 23.30';
+    break;
+  case 7: //søndag
+    day = 'kl 22.30';
+    break;
+
+  default:
+    day = 'kl 21.00' //mandag, tirsdag, onsdag
+}
+
+infoAaben.innerHTML = 'Bestil inden vi lukker i dag ' + day;

@@ -3,9 +3,6 @@ PRO2
 case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 -->
 
-<!-- library used (skal lige undersøge licensen nærmere): https://alvarotrigo.com/fullPage/#page1 -->
-<!-- API used:  -->
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -15,12 +12,15 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- til library - Selvstudiedag 2 d. 11/03  -->
+  <!-- library used (skal lige undersøge licensen nærmere): https://alvarotrigo.com/fullPage/#page1 -->
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-  <!-- weather - Selvstudiedag 2 d. 11/03 -->
+  <!-- openweathermap - Selvstudiedag 2 d. 11/03 -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- til mapbox - Selvstudiedag 3 d. 15/03 -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+  <!-- js library star-rating.js - Selvstudiedag 4 d. 16/03 (https://github.com/pryley/star-rating.js) -->
+  <link href="css/star-rating.css" rel="stylesheet">
   <!-- Stylesheet  -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -37,9 +37,8 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
         </article>
 
         <div id="map"></div> <!-- mapbox - Selvstudiedag 3 d. 15/03 -->
-        <p id="kortBeskrivelse">Find parkering og transport muligheder</p>
-        <h2>Kom igang</h2>
-        <a href="#section2" id="pilNed"><h1>▼</h1></a>
+        <p id="kortBeskrivelse">Find parkering og transport muligheder i nærheden</p>
+        <h2>Besøg os</h2>
         <a href="#section2"><img src="images/pilforside.png" alt="pil til næste side" style="width: auto; height:50px;"></a>
       </div>
 
@@ -52,25 +51,47 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
             <img src="images/stepEt.jpg" alt="bord med mad" style="width: 60%; height: auto;">
           </article>
           <div id="result"></div> <!-- weather - Selvstudiedag 2 d. 11/03 -->
-          <a class="btnSort" href="#">Book bord</a>
+          <a class="btnSort" href="bookbord.html">Book bord</a>
         </div>
 
         <div class="slide" data-anchor="slide2">
           <article id="stepEt">
             <h2> Step 2 </h2>
-            <h1>Sæsonens menu</h1>
+            <h1>Hvad har du lyst <br>til at spise?</h1> <!-- Sæsonens menu -->
             <p> Oplev vores eftertragtede forårsmenu 2022.</p>
-            <hr class="lineTo">
-            <p> bestil din mad nu</p>
             <img src="images/laks.jpg" alt="bord med mad" style="width: 60%; height: auto;">
-          </article>
+            <hr class="lineTo">
+            <p id="infoAaben"></p> <!-- åbningstider - Selvstudiedag 5 d. 18/03 -->
 
+          </article>
             <a class="btnSort" href="bestillingspanel.html">Bestil mad</a>
         </div>
+
+        <div class="slide" data-anchor="slide3">
+          <article id="stepEt">
+            <h2> Step 3 </h2>
+            <h1>Ses vi snart igen?</h1>
+            <p>Vi håber du vil dele din oplevelse med os!</p>
+            <img src="images/stepEt.jpg" alt="bord med mad" style="width: 60%; height: auto;">
+            <hr class="lineTo">
+
+            <section id="stjerner">
+            <select class="star-rating">
+              <option value="">Select a rating</option>
+              <option value="5">Excellent</option>
+              <option value="4">Very Good</option>
+              <option value="3">Average</option>
+              <option value="2">Poor</option>
+              <option value="1">Terrible</option>
+            </select>
+            </section>
+
+          </article>
+          <a class="btnSort" href="#">Send anmeldelse</a>
+        </div>
+
       </div>
   </div>
-
-
 
 
   </main>
@@ -83,6 +104,11 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
     new fullpage('#fullpage', {
     sectionsColor: ['#F2F2F2', '#D9843B'],
     });
+  </script>
+  <!-- script star-rating.js library -->
+  <script src="js/star-rating.js"></script>
+  <script>
+    var stars = new StarRating('.star-rating');
   </script>
 
 

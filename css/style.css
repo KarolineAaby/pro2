@@ -13,6 +13,9 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 @import url("https://use.typekit.net/ewx8vxc.css");
 /* font-family: 'gautreaux', sans-serif; font-weight: 700; font-style: normal; */
 
+/* library - star-rating.js */
+@import 'star-rating';
+
 /* Variabler*/
 :root {
   /* farver */
@@ -32,6 +35,10 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
   --overskrift2: 'interface', sans-serif; /* overskrift 2 */
   --brødtekst: 'myriad-pro', sans-serif; /* brødtekst */
   --citat: 'gautreaux', sans-serif;
+
+  /* library - star-rating.js */
+  --gl-star-size: 50px;
+  --gl-tooltip-font-size: 1.5rem;
 }
 
 * {
@@ -154,7 +161,7 @@ nav {
   background-color: var(--yellow);
   text-align: center;
   width: 34%;
-  height: 1020px; /* Højden afhænger af hvor stor skærmen endeligt vil være */
+  height: 1180px; /* Højden afhænger af hvor stor skærmen endeligt vil være */
   margin-right: 0;
   margin-left: 66%;
   padding: 1.5em;
@@ -224,7 +231,7 @@ nav {
   justify-content: center;
   margin-top: 2em;
 }
-#VendTilStart button {
+.btnOrange {
   color: var(--white);
   background-color: var(--orange);
   text-align: center;
@@ -236,6 +243,7 @@ nav {
   box-shadow: 0px 0px 5px var(--brown);
   border-radius: 60px;
   border: none;
+  margin: 4em;
 }
 
 
@@ -384,10 +392,6 @@ hr.line {
   font-size: 1.2rem;
   color: var(--grey);
 }
-#pilNed {
-  text-decoration: none;
-  font-size: 2rem;
-}
 
 /* step 2 */
 hr.lineTo {
@@ -397,4 +401,105 @@ hr.lineTo {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* --- anmeldelse - Selvstudiedag 4 d. 16/03 ---- */
+#stjerner {
+  display: flex;
+  justify-content: center;
+  margin-right: 23%;
+  margin-top: 1.5em;
+}
+
+
+/* --- Book bord - Selvstudiedag 4 d. 16/03 ---- */
+#gæster,
+#tidspunkt,
+#radio,
+#lastField {
+  display: none;
+}
+.alleKnapperne {
+  width: 100px;
+  height: 60px;
+  background-color: var(--orange);
+  margin-top: 30px;
+  text-align: center;
+  padding: 5px;
+  font-family: var(--brødtekst);
+  font-size: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+#tilbagebtn1,
+#tilbagebtn2,
+#tilbagebtn3,
+#tilbagebtn4 {
+  background-color: var(--black);
+  color: var(--white);
+}
+#tilbagebtn4 {
+  margin-top: 10px;
+}
+.knapperPlacering {
+  display: flex;
+  justify-content: space-between;
+}
+.knapperPlacering p, .btn1Placering p {
+  margin-top: 40px;
+  font-family: var(--brødtekst);
+  color: var(--grey);
+}
+.btn1Placering {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+legend {
+  font-family: var(--overskrift1);
+  color: var(--black);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+fieldset {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+  margin-top: 110px;
+  border: none;
+  font-family: var(--brødtekst);
+  color: var(--black);
+}
+label,
+input,
+.navnskrift {
+  font-size: 2rem;
+}
+.bemærkGæster {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+#send {
+  width: 100px;
+  height: 60px;
+  background-color: var(--orange);
+  text-align: center;
+  font-family: var(--brødtekst);
+  color: var(--black);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.bemærkLast {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: var(--grey);
 }

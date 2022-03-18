@@ -50,6 +50,8 @@ dessertTo.addEventListener('click', function(){
   ialt.innerHTML = sum + "<div> kr.</div>";
 })
 
+// https://github.com/asathoor/2sem-foraar-2022/blob/main/menu-board/js/kiosk.js
+
 // betal knap
 betal.addEventListener('click', function(){
   localStorage.setItem("liste", bestillinger.innerHTML);
