@@ -1,17 +1,18 @@
 <!--
 PRO2
-case: Alices Restaurant - touchscreeen i str. 750x1020
+case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 Selvstudiedag 1
 -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <title>Bestllingspanel</title>
+  <title>Bestillingspanel</title>
 </head>
 
 <body>
@@ -22,79 +23,64 @@ Selvstudiedag 1
 
   <main id="bestillingspanel">
 
-  <section id="bestillingsMenu">
-    <article>
-    <h1>Forårsmenuen 2022</h1>
-    </article>
+    <section id="bestillingsMenu">
+      <article>
+        <h1>Forårsmenuen 2022</h1>
+      </article>
 
-    <!-- foretter -->
-    <h2 id="foretter">Foretter</h2>
-    <article id="suppe" class="order">
-      <h2 id="suppeBestilling">Hokkaidosuppe</h2>
-      <img id="foretEt" src="images/suppe.jpg" alt="#">
-      <p>Pris: 80,-</p>
-    </article>
-    <article id="kylling" class="order">
-      <h2 id="kyllingBestilling">Kylling med peaunuts</h2>
-      <img id="foretTo" src="images/kylling.jpg" alt="#">
-      <p>Pris: 89,-</p>
-    </article>
+      <!-- foretter -->
+      <h2 id="foretter">Foretter</h2>
+      <article id="suppe" class="order">
+        <h2 id="suppeBestilling">Hokkaidosuppe</h2>
+        <img id="foretEt" src="images/suppe.jpg" alt="#">
+        <p>Pris: 80,-</p>
+      </article>
+      <article id="kylling" class="order">
+        <h2 id="kyllingBestilling">Kylling med peaunuts</h2>
+        <img id="foretTo" src="images/kylling.jpg" alt="#">
+        <p>Pris: 89,-</p>
+      </article>
 
-    <!-- hovedretter -->
-    <h2 id="hovedretter">Hovedretter</h2>
-    <article id="oksemørbrad" class="order">
-      <h2 id="oksemørbradBestilling">Oksemørbrad med kantarelsauce</h2>
-      <img id="hovedretEt" src="images/oksemørbrad.jpg" alt="#">
-      <p>Pris: 220,-</p>
-      <!-- <div id="fjern">
-      <button onclick="alert('X klikket')">X</button>
-    </div> -->
-    </article>
-    <article id="laks" class="order">
-      <h2 id="laksBestilling">Frisk laks med grønt</h2>
-      <img id="hovedretTo" src="images/laks.jpg" alt="#">
-      <p>Pris: 190,-</p>
-    </article>
+      <!-- hovedretter -->
+      <h2 id="hovedretter">Hovedretter</h2>
+      <article id="oksemørbrad" class="order">
+        <h2 id="oksemørbradBestilling">Oksemørbrad med kantarelsauce</h2>
+        <img id="hovedretEt" src="images/oksemørbrad.jpg" alt="#">
+        <p>Pris: 220,-</p>
+      </article>
+      <article id="laks" class="order">
+        <h2 id="laksBestilling">Frisk laks med grønt</h2>
+        <img id="hovedretTo" src="images/laks.jpg" alt="#">
+        <p>Pris: 190,-</p>
+      </article>
 
-    <!-- desserter -->
-    <h2 id="desserter">Desserter</h2>
-    <article id="kardemomme" class="order">
-      <h2 id="kardemommeBestilling">Kardemommeis</h2>
-      <img id="dessertEt" src="images/kardemomme.jpg" alt="#">
-      <p>Pris: 69,-</p>
-    </article>
-    <article id="chokolademousse" class="order">
-      <h2 id="chokolademousseBestilling">Chokolademousse bombe</h2>
-      <img id="dessertTo" src="images/chokolademousse.png" alt="#">
-      <p>Pris: 69,-</p>
-    </article>
-  </section>
+      <!-- desserter -->
+      <h2 id="desserter">Desserter</h2>
+      <article id="kardemomme" class="order">
+        <h2 id="kardemommeBestilling">Kardemommeis</h2>
+        <img id="dessertEt" src="images/kardemomme.jpg" alt="#">
+        <p>Pris: 69,-</p>
+      </article>
+      <article id="chokolademousse" class="order">
+        <h2 id="chokolademousseBestilling">Chokolademousse bombe</h2>
+        <img id="dessertTo" src="images/chokolademousse.png" alt="#">
+        <p>Pris: 69,-</p>
+      </article>
+    </section>
 
-  <section id="alleBestillinger">
-    <h1>Her er dine bestillinger</h1>
-  <div id="bestillinger"></div>
-  <article id=pengeIalt>
-    <h4>I alt:</h4>
-    <p id="ialt"></p>
-    <button id="betal">Betal</button> <!-- må ikke stå under id=bestillinger -->
-  </article>
-  </section>
-
-  <!--
-  <section id="alleBestillinger">
-  <article id="bestillinger">
-    <h1>Her er dine bestillinger</h1>
-  </article>
-  <article id=pengeIalt>
-    <h4>I alt:</h4>
-    <p id="ialt"></p>
-    <button id="betal">Betal</button>
-  </article>
-  </section>
-  -->
+    <section id="alleBestillinger">
+      <h1>Her er dine bestillinger</h1>
+      <div id="bestillinger"></div>
+      <article id=pengeIalt>
+        <h4>I alt:</h4>
+        <p id="ialt"></p>
+        <button id="betal">Betal</button> <!-- må ikke stå under id=bestillinger -->
+      </article>
+    </section>
   </main>
 
   <!-- scripts -->
   <script type="text/javascript" src="js/bestillingspanel.js"></script>
 </body>
+
 </html>

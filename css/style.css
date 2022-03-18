@@ -2,7 +2,6 @@
 PRO2
 case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 */
-
 /* Adobe fonts */
 @import url("https://use.typekit.net/vzd5ibg.css");
 /* font-family: 'filicudi-solid', sans-serif; font-weight: 400; font-style: normal; */
@@ -12,7 +11,6 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 /* font-family: 'myriad-pro', sans-serif; font-weight: 400; font-style: normal; */
 @import url("https://use.typekit.net/ewx8vxc.css");
 /* font-family: 'gautreaux', sans-serif; font-weight: 700; font-style: normal; */
-
 /* library - star-rating.js */
 @import 'star-rating';
 
@@ -26,16 +24,16 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
   --brown: #C39E83;
   --grey: #1B2226;
   --black: #0C0D12;
-
   /* whitespace */
   --whitespace: .5rem;
-
   /* fonte */
-  --overskrift1: 'filicudi-solid', sans-serif; /* overskrift 1 */
-  --overskrift2: 'interface', sans-serif; /* overskrift 2 */
-  --brødtekst: 'myriad-pro', sans-serif; /* brødtekst */
+  --overskrift1: 'filicudi-solid', sans-serif;
+  /* overskrift 1 */
+  --overskrift2: 'interface', sans-serif;
+  /* overskrift 2 */
+  --brødtekst: 'myriad-pro', sans-serif;
+  /* brødtekst */
   --citat: 'gautreaux', sans-serif;
-
   /* library - star-rating.js */
   --gl-star-size: 50px;
   --gl-tooltip-font-size: 1.5rem;
@@ -56,7 +54,7 @@ html {
 
 /* baggrund */
 body {
-  background-size:100% auto;
+  background-size: 100% auto;
   background-color: var(--white);
 }
 
@@ -67,12 +65,14 @@ h1, h3, h4 {
   margin-bottom: var(--whitespace);
   color: var(--black);
 }
+
 h2 {
   font-family: var(--overskrift2);
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
   color: var(--black);
 }
+
 p {
   font-family: var(--brødtekst);
   margin-top: var(--whitespace);
@@ -95,6 +95,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-vendTilbage {
   font-family: var(--overskrift2);
   font-size: 2.5rem;
@@ -102,35 +103,25 @@ nav {
   color: var(--black);
   margin-right: 40px;
 }
-/*.navbar {
-  overflow: hidden;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;*/
-    /*background-color: var(--black);
-}*/
-
 
 /* --- Selvstudiedag 1 d. 09/03 - bestillingspanel --- */
 #bestillingspanel {
   display: flex;
 }
+
 #bestillingspanel article {
   margin-bottom: 2em;
 }
+
 /* bestillings menuen */
 #bestillingsMenu {
   width: 66%;
 }
+
 #bestillingsMenu h1 {
   text-align: center;
 }
+
 #bestillingspanel img,
 #bestillingspanel h2,
 #bestillingspanel p,
@@ -139,13 +130,16 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 #bestillingspanel h2 {
   margin-bottom: 1em;
 }
+
 .order p {
   text-align: right;
   margin: 1em;
 }
+
 #hovedretter,
 #foretter,
 #desserter {
@@ -155,17 +149,20 @@ nav {
   color: var(--black);
   text-align: center;
 }
+
 /* alle besillinger */
 #alleBestillinger {
   position: fixed;
   background-color: var(--yellow);
   text-align: center;
   width: 34%;
-  height: 1180px; /* Højden afhænger af hvor stor skærmen endeligt vil være */
+  height: 1180px;
+  /* Højden afhænger af hvor stor skærmen endeligt vil være */
   margin-right: 0;
   margin-left: 66%;
   padding: 1.5em;
 }
+
 /* betal knap */
 #betal {
   color: var(--white);
@@ -180,25 +177,29 @@ nav {
   border-radius: 60px;
   border: none;
 }
+
 /* penge i alt */
 #ialt {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:0.3em;
+  gap: 0.3em;
   text-align: center;
   margin: 1em;
   margin-top: 0.1em;
 }
+
 #pengeIalt h4 {
   margin-top: 1.5em;
 }
+
 /* kvittering */
 #kvittering {
   text-align: center;
   font-family: var(--brødtekst);
   color: var(--black);
 }
+
 #kvittering h1 {
   text-align: center;
   font-family: var(--overskrift1);
@@ -206,6 +207,7 @@ nav {
   margin-top: 2.5em;
   font-size: 2rem;
 }
+
 #kvittering h3 {
   text-align: center;
   margin-top: 2em;
@@ -213,24 +215,28 @@ nav {
   color: var(--black);
   font-size: 1.5rem;
 }
+
 #visPenge {
   margin-top: 2em;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  gap:0.3em;
+  gap: 0.3em;
 }
+
 /* baggrund */
 .bestillingspanelKvittering {
   background-color: var(--yellow);
 }
+
 /* btn - Tilbage til startskærm */
 #VendTilStart {
   display: flex;
   justify-content: center;
   margin-top: 2em;
 }
+
 .btnOrange {
   color: var(--white);
   background-color: var(--orange);
@@ -246,38 +252,23 @@ nav {
   margin: 4em;
 }
 
-
 /* --- Library - Selvstudiedag 2 d. 11/03 --- */
 .section {
-  text-align:center;
-  /*font-size: 3em;*/
-}
-#getActiveSection{
-  /*top: 20px;*/
-  /*left: 320px;
-  position:fixed;
-  z-index:999;*/
-  /*font-size: 2.4em;*/
+  text-align: center;
 }
 
 /* --- weather - Selvstudiedag 2 d. 11/03 --- */
 #vejretBoks {
-  /* background-color: var(--grey); */
   width: 60%;
   margin-right: auto;
   margin-left: auto;
 }
-/*#vejretLayout {
-  border-style: dashed;
-  border-width: medium;
-  border-color: var(--grey);
-}*/
+
 hr.line {
   border: 1px solid;
   border-color: var(--grey);
   margin-top: 2em;
 }
-
 
 /* vejret position/layout */
 #vejretLayout {
@@ -287,6 +278,7 @@ hr.line {
   gap: 80px;
   align-items: flex-end;
 }
+
 #vejretInfo {
   text-align: left;
 }
@@ -295,11 +287,13 @@ hr.line {
   width: 100%;
   height: auto;
 }
+
 #pil {
   position: relative;
   width: 10%;
   height: auto;
 }
+
 #vind {
   display: flex;
   flex-direction: row;
@@ -307,12 +301,14 @@ hr.line {
   gap: 20px;
   align-items: baseline;
 }
+
 /* font/typografi */
 #sectionTo h3 {
   font-size: 2rem;
   color: var(--grey);
   font-family: var(--overskrift2);
 }
+
 #sectionTo p {
   font-size: 1.5rem;
 }
@@ -320,22 +316,23 @@ hr.line {
 #stepEt h1 {
   font-size: 3rem;
 }
+
 #stepEt h2 {
   font-size: 2.5rem;
   color: var(--yellow);
   font-family: var(--overskrift2);
   margin-bottom: 1em;
 }
+
 #stepEt p {
   font-size: 1.7rem;
 }
-/* #stepEt {
-  margin-bottom: 4em;
-}*/
+
 /* billede */
 #stepEt img {
   margin-top: 2em;
 }
+
 /* btn - book bord */
 .btnSort {
   color: var(--white);
@@ -352,20 +349,16 @@ hr.line {
   margin: 4em;
 }
 
-
 /* --- Mapbox på forside - Selvstudiedag 3 d. 15/03 ---- */
 #map {
-  /*position: absolute;
-  top: 0;
-   bottom: 0; */
   width: 70%;
   height: 25%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 2em;
 }
+
 #marker {
-  /* hvis man vil tilføje billede fra com: url('images/logo.png'); */
   background-image: url('https://files.guidedanmark.org/files/484/260036_Boef-restaurant-koed-aarhus.jpg');
   background-color: black;
   background-size: cover;
@@ -374,6 +367,7 @@ hr.line {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .mapboxgl-popup {
   max-width: 200px;
 }
@@ -383,10 +377,12 @@ hr.line {
   margin-bottom: 2em;
   font-size: 2.5rem;
 }
+
 .velkommen h1 {
   color: var(--orange);
   margin-bottom: 0.5em;
 }
+
 #kortBeskrivelse {
   margin-bottom: 6em;
   font-size: 1.2rem;
@@ -403,7 +399,6 @@ hr.lineTo {
   margin-right: auto;
 }
 
-
 /* --- anmeldelse - Selvstudiedag 4 d. 16/03 ---- */
 #stjerner {
   display: flex;
@@ -412,7 +407,6 @@ hr.lineTo {
   margin-top: 1.5em;
 }
 
-
 /* --- Book bord - Selvstudiedag 4 d. 16/03 ---- */
 #gæster,
 #tidspunkt,
@@ -420,6 +414,7 @@ hr.lineTo {
 #lastField {
   display: none;
 }
+
 .alleKnapperne {
   width: 100px;
   height: 60px;
@@ -432,6 +427,7 @@ hr.lineTo {
   color: var(--black);
   cursor: pointer;
 }
+
 #tilbagebtn1,
 #tilbagebtn2,
 #tilbagebtn3,
@@ -439,33 +435,40 @@ hr.lineTo {
   background-color: var(--black);
   color: var(--white);
 }
+
 #tilbagebtn4 {
   margin-top: 10px;
 }
+
 .knapperPlacering {
   display: flex;
   justify-content: space-between;
 }
+
 .knapperPlacering p, .btn1Placering p {
   margin-top: 40px;
   font-family: var(--brødtekst);
   color: var(--grey);
 }
+
 .btn1Placering {
   display: flex;
   justify-content: space-between;
 }
+
 input {
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 10px;
 }
+
 legend {
   font-family: var(--overskrift1);
   color: var(--black);
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
+
 fieldset {
   width: 50%;
   margin-left: auto;
@@ -476,16 +479,19 @@ fieldset {
   font-family: var(--brødtekst);
   color: var(--black);
 }
+
 label,
 input,
 .navnskrift {
   font-size: 2rem;
 }
+
 .bemærkGæster {
   margin-top: 20px;
   font-size: 1.5rem;
   color: var(--grey);
 }
+
 #send {
   width: 100px;
   height: 60px;
@@ -497,6 +503,7 @@ input,
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .bemærkLast {
   margin-top: 0;
   margin-bottom: 15px;

@@ -1,6 +1,7 @@
 /*
 PRO2
-case: Alices Restaurant - touchscreeen i str. 750x1020
+case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
+Selvstudiedag 1
 */
 
 
@@ -23,13 +24,13 @@ foretTo.addEventListener('click', function(){
 //hovedretter
 hovedretEt.addEventListener('click', function(){
   bestillinger.innerHTML += "<br>" + oksemørbradBestilling.innerHTML + "<br/>"
-  //For at få dele af html ind - kan også skrive: bestillinger.innerHTML += oksemørbrad.innerHTML"
-  // bestillinger.innerHTML += fjern.innerHTML + "<br>"
-  //Ved brug af sessionStorage -
-  //bestillinger.innerHTML += parseInt(sessionStorage.getItem("test")) + parceInt(sessionStorage.getItem("test"))
   sum = sum + 220
   ialt.innerHTML = sum + "<div> kr.</div>";
 })
+function cancel(amount) {
+  sum -= amount
+  ialt.innerHTML = sum
+}
 
 hovedretTo.addEventListener('click', function(){
   bestillinger.innerHTML += "<br>" + laksBestilling.innerHTML + "<br/>"
@@ -49,8 +50,6 @@ dessertTo.addEventListener('click', function(){
   sum = sum + 69
   ialt.innerHTML = sum + "<div> kr.</div>";
 })
-
-// https://github.com/asathoor/2sem-foraar-2022/blob/main/menu-board/js/kiosk.js
 
 // betal knap
 betal.addEventListener('click', function(){

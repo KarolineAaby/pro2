@@ -5,6 +5,7 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
 
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <title>Alice's Restaurant</title>
@@ -25,6 +26,7 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
   <main>
@@ -53,47 +55,40 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
           <div id="result"></div> <!-- weather - Selvstudiedag 2 d. 11/03 -->
           <a class="btnSort" href="bookbord.html">Book bord</a>
         </div>
-
         <div class="slide" data-anchor="slide2">
           <article id="stepEt">
             <h2> Step 2 </h2>
-            <h1>Hvad har du lyst <br>til at spise?</h1> <!-- Sæsonens menu -->
+            <h1>Hvad har du lyst <br>til at spise?</h1>
             <p> Oplev vores eftertragtede forårsmenu 2022.</p>
             <img src="images/laks.jpg" alt="bord med mad" style="width: 60%; height: auto;">
             <hr class="lineTo">
             <p id="infoAaben"></p> <!-- åbningstider - Selvstudiedag 5 d. 18/03 -->
-
           </article>
-            <a class="btnSort" href="bestillingspanel.html">Bestil mad</a>
+          <a class="btnSort" href="bestillingspanel.html">Bestil mad</a>
         </div>
-
         <div class="slide" data-anchor="slide3">
           <article id="stepEt">
             <h2> Step 3 </h2>
             <h1>Ses vi snart igen?</h1>
             <p>Vi håber du vil dele din oplevelse med os!</p>
-            <img src="images/stepEt.jpg" alt="bord med mad" style="width: 60%; height: auto;">
+            <img src="images/stepTre.png" alt="tallerken med mad" style="width: 60%; height: auto;">
             <hr class="lineTo">
-
             <section id="stjerner">
-            <select class="star-rating">
-              <option value="">Select a rating</option>
-              <option value="5">Excellent</option>
-              <option value="4">Very Good</option>
-              <option value="3">Average</option>
-              <option value="2">Poor</option>
-              <option value="1">Terrible</option>
-            </select>
+              <select class="star-rating">
+                <!-- js library star-rating.js - Selvstudiedag 4 d. 16/03  -->
+                <option value="">Select a rating</option>
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Average</option>
+                <option value="2">Poor</option>
+                <option value="1">Terrible</option>
+              </select>
             </section>
-
           </article>
-          <a class="btnSort" href="#">Send anmeldelse</a>
+          <a class="btnSort" href="#">Send anmeldelse</a> <!-- mangler stadig noget, for at knappen virker  -->
         </div>
-
       </div>
-  </div>
-
-
+    </div>
   </main>
 
   <!-- scripts -->
@@ -102,7 +97,7 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script>
     new fullpage('#fullpage', {
-    sectionsColor: ['#F2F2F2', '#D9843B'],
+      sectionsColor: ['#F2F2F2', '#D9843B'],
     });
   </script>
   <!-- script star-rating.js library -->
@@ -111,7 +106,6 @@ case: Alices Restaurant - touchscreeen f.eks. til iPad Air i str. 820x1180
     var stars = new StarRating('.star-rating');
   </script>
 
-
-
 </body>
+
 </html>
